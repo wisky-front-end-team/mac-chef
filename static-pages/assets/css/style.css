@@ -1,0 +1,45 @@
+/* main color: #a77b4e */
+
+/** GENERAL **/
+body {
+	font-family: 'Open Sans', sanserif;
+}
+/** /GENERAL **/
+
+/** HEADER **/
+#header {
+	color: #a77b4e;
+	padding-top: 15px;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 400;
+}
+#header .left {
+	padding-top: 50px;
+}
+#header .center {
+	text-align: center;
+}
+#header .logo {
+
+}
+#header .right {
+	padding-top: 50px;
+}
+#header .lang {
+	border: 1px solid #a77b4e;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #a77b4e;
+}
+#header .action:first-child {
+	
+}
+#header .action:not(:first-child) {
+	border-right: 1px solid #a77b4e;
+	padding: 20px;
+}
+/** /HEADER **/
+
+/** NAV **/
+/** /NAV **/
