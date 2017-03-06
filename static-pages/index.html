@@ -21,7 +21,7 @@
       <div class="row">
         <!-- Left -->
         <div class="left col-md-4">
-          <a class="lang">ENG</a>
+          <a href="#" class="lang">ENG</a>
           <span>HOTLINE: +84 966 290 290</span>
         </div><!-- /Left -->
         <!-- Center -->
@@ -166,16 +166,65 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <a href="#" class="image image-full" style="background-image: url('./assets/images/winter-sale.png')">
+          <a href="#" class="image" style="background-image: url('./assets/images/winter-sale.png')">
           </a>
         </div>
         <div class="col-sm-6">
-          <a href="#" class="image image-full" style="background-image: url('./assets/images/new-trend.png')">
+          <a href="#" class="image" style="background-image: url('./assets/images/new-trend.png')">
           </a>
         </div>
       </div>
     </div>
   </section><!-- /ADS -->
+
+  <!-- TOP PRODUCTS -->
+  <section id="top-products">
+    <div class="container">
+      <h1 class="title">SẢN PHẨM HÀNG ĐẦU</h1>
+      <div class="swiper">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">            
+                  <a href="#" class="image" style="background-image: url('./assets/images/non-coolmax.jpg')"></a>
+                  <a href="#">
+                    <h3 class="name">Nón Coolmax</h3>
+                  </a>
+                  <div class="price">200.000 VND</div>
+                </div>
+                <div class="swiper-slide">            
+                  <a href="#" class="image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                  <a href="#">
+                    <h3 class="name">Áo nam tay ngắn</h3>
+                  </a>
+                  <div class="price">200.000 VND</div>
+                </div>
+                <div class="swiper-slide">            
+                  <a href="#" class="image" style="background-image: url('./assets/images/tap-de-denim.jpg')"></a>
+                  <a href="#">
+                    <h3 class="name">Tạp dề Denim xám</h3>
+                  </a>
+                  <div class="price">200.000 VND</div>
+                </div>
+                <div class="swiper-slide">            
+                  <a href="#" class="image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                  <a href="#">
+                  <h3 class="name">Áo nam tay ngắn</h3>
+                  </a>
+                  <div class="price">200.000 VND</div>
+                </div>
+            </div>
+        </div>      
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+          <i class="fa fa-angle-right fa-2x"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fa fa-angle-left fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </section><!-- /TOP PRODUCTS -->
 
   <footer id="footer">
   </footer>
@@ -185,12 +234,19 @@
   <script type="text/javascript" src="assets/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
   <script type="text/javascript">
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
+    var swiperMainSlider = new Swiper('#main-slider .swiper-container', {
+        pagination: '#main-slider .swiper-pagination',
         paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        nextButton: '#main-slider .swiper-button-next',
+        prevButton: '#main-slider .swiper-button-prev',
         spaceBetween: 30
+    });
+    var swiperTopProducts = new Swiper('#top-products .swiper-container', {
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 160,
+        nextButton: '#top-products .swiper-button-next',
+        prevButton: '#top-products .swiper-button-prev'
     });
   </script>
 </body>

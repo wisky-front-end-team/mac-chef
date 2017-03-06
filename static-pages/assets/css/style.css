@@ -228,3 +228,59 @@
 		padding: 0;
 	}
 /** /ADS **/
+
+/** TOP PRODUCTS **/
+	#top-products {
+		margin-top: 100px;
+	}
+	#top-products .title {
+		text-align: center;
+		font-size: 28px;
+		color: #a77b4e;
+		font-weight: bold;
+		margin: 0;
+	}
+	#top-products .image {
+		display: block;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 360px;
+	}	
+	#top-products .swiper {
+		position: relative;
+	}
+	#top-products .swiper-container {
+		margin-top: 50px;
+	}
+	#top-products .swiper-button-next,
+	#top-products .swiper-button-prev {
+		background: none;
+		color: #a77b4e;
+		font-size: 30px;
+		transform: translateY(-100%);
+	}
+	#top-products .swiper-button-next {
+		right: -45px;
+	}
+	#top-products .swiper-button-prev {
+		left: -45px;
+	}
+	#top-products .swiper-slide {
+		text-align: center;
+	}
+	#top-products .name {
+		font-weight: bold;
+		color: #a77b4e;
+		font-size: 20px;
+		margin: 25px 0 0;
+	}
+	#top-products a:hover {
+		text-decoration: none;
+	}	
+	#top-products .price {
+		color: #a77b4e;
+		margin-top: 10px;
+	}
+/** /TOP PRODUCTS **/
