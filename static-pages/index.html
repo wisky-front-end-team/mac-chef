@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/plugins/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+  <link rel="stylesheet" href="./assets/plugins/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/theme.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -97,16 +97,59 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <section>
-  </section>
+  <!-- MAIN SLIDER -->
+  <section id="main-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          <div class="row">
+            <div class="col-xs-7 left">
+              <img width="100%" height="639" src="./assets/images/team.png">
+            </div>
+            <div class="col-xs-5 right">
+              <h3 class="slide-title-sm">M.A.C Collection</h3>
+              <h1 class="slide-title-lg">
+                THE NEW<br>
+                <span>SPRING</span><br>
+                COLLECTION
+              </h1>
+              <a href="#" class="shop-now">
+                SHOP NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next">
+        <i class="fa fa-angle-right fa-2x"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="fa fa-angle-left fa-2x"></i>
+      </div>
+    </div>
+  </section><!-- /MAIN SLIDER -->
 
   <footer id="footer">
   </footer>
 
   <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+    });
+  </script>
 </body>
 
 </html>
