@@ -1,45 +1,90 @@
 /* main color: #a77b4e */
 
 /** GENERAL **/
-body {
-	font-family: 'Open Sans', sanserif;
-}
+	body {
+		font-family: 'Open Sans', sanserif;
+	}
 /** /GENERAL **/
 
 /** HEADER **/
-#header {
-	color: #a77b4e;
-	padding-top: 15px;
-	font-size: 12px;
-	line-height: 12px;
-	font-weight: 400;
-}
-#header .left {
-	padding-top: 50px;
-}
-#header .center {
-	text-align: center;
-}
-#header .logo {
-
-}
-#header .right {
-	padding-top: 50px;
-}
-#header .lang {
-	border: 1px solid #a77b4e;
-	border-radius: 5px;
-	padding: 5px 10px;
-	color: #a77b4e;
-}
-#header .action:first-child {
-	
-}
-#header .action:not(:first-child) {
-	border-right: 1px solid #a77b4e;
-	padding: 20px;
-}
+	#header {
+		color: #a77b4e;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 12px;
+		line-height: 12px;
+		font-weight: 600;
+	}
+	#header a {
+		color: #a77b4e;
+	}
+	#header .left {
+		padding-top: 85px;
+	}
+	#header .center {
+		text-align: center;
+	}
+	#header .logo {
+	}
+	#header .right {
+		padding-top: 85px;
+	}
+	#header .lang {
+		border: 1px solid #a77b4e;
+		border-radius: 5px;
+		padding: 5px 10px;
+		color: #a77b4e;
+		margin-right: 15px;
+	}
+	#header .action:first-child {
+		padding-left: 20px;
+	}
+	#header .action:not(:first-child) {
+		border-right: 1px solid #a77b4e;
+		padding: 0 20px;
+	}
+	#header .fa {
+		font-size: 20px;
+	}
+	#header .fa-user {
+		margin-right: 10px;
+	}
 /** /HEADER **/
 
 /** NAV **/
+	#nav {
+		background: #a77b4e;
+		border-radius: 0;
+	}
+	#nav li a {
+		color: white;
+	}
+	#nav ul.nav {
+		float: none;
+		text-align: justify;
+		font-size: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	#nav ul.nav::after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	#nav ul.nav li {
+		display: inline-block;
+		float: none;
+		font-size: initial;
+		transition-duration: .2s;
+	}
+	#nav ul.nav li:hover {
+		background: rgba(255,255,255,.3); 
+	}
+	#nav ul.nav li.active a {
+		background: rgba(255,255,255,.3); 
+	}
+	#nav .navbar-collapse {
+		padding-left: 0;
+		padding-right: 0;
+	}
 /** /NAV **/
