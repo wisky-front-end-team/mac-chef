@@ -211,3 +211,20 @@
 		margin: 0;
 	}
 /** /CATEGORIES **/
+
+/** ADS **/
+	#ads .image {
+		display: block;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 360px;
+	}
+	#ads .row {
+		margin: 0;
+	}
+	#ads .row > * {
+		padding: 0;
+	}
+/** /ADS **/
