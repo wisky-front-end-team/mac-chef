@@ -18,9 +18,6 @@
 	#header a {
 		color: #a77b4e;
 	}
-	#header .left {
-		padding-top: 45px;
-	}
 	#header .center {
 		text-align: center;
 	}
@@ -28,8 +25,13 @@
 		width: 170px;
 		height: 70px;
 	}
-	#header .right {
-		padding-top: 45px;
+	@media (min-width: 768px) {
+		#header .left {
+			padding-top: 45px;
+		}
+		#header .right {
+			padding-top: 45px;
+		}		
 	}
 	#header .lang {
 		border: 1px solid #a77b4e;
@@ -106,7 +108,7 @@
 	}
 /** /NAV **/
 
-/** NAV **/
+/** MAIN SLIDER **/
 	#main-slider .slide-title-sm {
 		font-size: 22px;
 		color: black;
@@ -162,4 +164,50 @@
 			padding-top: 160px;
 		}
 	}
-/** /NAV **/
+/** /MAIN SLIDER **/
+
+/** CATEGORIES **/
+	#categories {
+		margin-top: 30px;
+	}
+	#categories .image {
+		display: block;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		margin-bottom: 30px;
+	}
+	#categories .image::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 86px;
+		background: #EF0E0E;
+		background: -moz-linear-gradient(top, transparent 0, rgba(0,0,0,.7) 100%);
+		background: -webkit-linear-gradient(top, transparent 0, rgba(0,0,0,.7) 100%);
+		background: -o-linear-gradient(top, transparent 0, rgba(0,0,0,.7) 100%);
+		background: -ms-linear-gradient(top, transparent 0, rgba(0,0,0,.7) 100%);
+		background: linear-gradient(top bottom, transparent 0, rgba(0,0,0,.7) 100%);
+	}
+	#categories .image-half,
+	#categories .image-full {
+		height: 250px;
+	}
+	@media (min-width: 768px) {	
+		#categories .image-full {
+			height: 530px;
+		}	
+	}
+	#categories .cate {
+		position: absolute;
+		left: 15px;
+		bottom: 15px;
+		color: white;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin: 0;
+	}
+/** /CATEGORIES **/
