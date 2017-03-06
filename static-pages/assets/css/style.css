@@ -4,6 +4,14 @@
 	*, h1, h2, h3, h4, h5, h6 {
 		font-family: 'Open Sans', sanserif;
 	}
+
+	.section-title {
+		text-align: center;
+		font-size: 28px;
+		color: #a77b4e;
+		font-weight: bold;
+		margin: 0;
+	}
 /** /GENERAL **/
 
 /** HEADER **/
@@ -25,7 +33,7 @@
 		width: 170px;
 		height: 70px;
 	}
-	@media (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		#header .left {
 			padding-top: 45px;
 		}
@@ -76,7 +84,7 @@
 	#nav .navbar-toggle:hover .icon-bar {
 		background: #a77b4e;
 	}
-	@media (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		#nav ul.nav {
 			float: none;
 			text-align: justify;
@@ -159,7 +167,7 @@
 	#main-slider .swiper-pagination-bullet-active {
 		background: #a77b4e;
 	}
-	@media (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		#main-slider .slide-1 .right {
 			padding-top: 160px;
 		}
@@ -196,7 +204,7 @@
 	#categories .image-full {
 		height: 250px;
 	}
-	@media (min-width: 768px) {	
+	@media screen and (min-width: 768px) {	
 		#categories .image-full {
 			height: 530px;
 		}	
@@ -233,13 +241,6 @@
 	#top-products {
 		margin-top: 100px;
 	}
-	#top-products .title {
-		text-align: center;
-		font-size: 28px;
-		color: #a77b4e;
-		font-weight: bold;
-		margin: 0;
-	}
 	#top-products .image {
 		display: block;
 		background-size: contain;
@@ -250,9 +251,7 @@
 	}	
 	#top-products .swiper {
 		position: relative;
-	}
-	#top-products .swiper-container {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 	#top-products .swiper-button-next,
 	#top-products .swiper-button-prev {
@@ -284,3 +283,45 @@
 		margin-top: 10px;
 	}
 /** /TOP PRODUCTS **/
+
+/** CUSTOMERS **/
+	#customers {
+		margin-top: 80px;
+		padding-top: 60px;
+		padding-bottom: 80px;
+		background: rgb(249,249,249);
+	}
+	#customers .image {
+		display: block;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 120px;
+	    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	    filter: grayscale(100%);
+	    transition-duration: .2s;
+	}
+	#customers .image:hover,
+	#customers .image:active {
+	    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+	    filter: grayscale(0);
+	}
+	#customers .swiper {
+		margin-top: 50px;
+		position: relative;
+	}
+	#customers .swiper-button-next,
+	#customers .swiper-button-prev {
+		background: none;
+		color: #a77b4e;
+		font-size: 30px;
+		transform: translateY(-22px);
+	}
+	#customers .swiper-button-next {
+		right: -45px;
+	}
+	#customers .swiper-button-prev {
+		left: -45px;
+	}
+/** /CUSTOMERS **/

@@ -2,6 +2,7 @@
 <html lang="en" xmlns:input="http://www.w3.org/1999/html">
 
 <head>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta charset="UTF-8">
   <title>Home</title>
 
@@ -180,7 +181,7 @@
   <!-- TOP PRODUCTS -->
   <section id="top-products">
     <div class="container">
-      <h1 class="title">SẢN PHẨM HÀNG ĐẦU</h1>
+      <h1 class="section-title">SẢN PHẨM HÀNG ĐẦU</h1>
       <div class="swiper">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -226,6 +227,51 @@
     </div>
   </section><!-- /TOP PRODUCTS -->
 
+  <!-- CUSTOMERS -->
+  <section id="customers">
+    <div class="container">
+      <h1 class="section-title">KHÁCH HÀNG</h1>
+      <div class="swiper">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/pv-bank.png')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/happy-chef.png')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/aeon-mall.png')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/kien-viet.jpg')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/pv-bank.png')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/happy-chef.png')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/aeon-mall.png')"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="image" style="background-image: url('./assets/images/kien-viet.jpg')"></a>
+                </div>
+            </div>
+        </div>      
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+          <i class="fa fa-angle-right fa-2x"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fa fa-angle-left fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </section><!-- /CUSTOMERS -->
+
   <footer id="footer">
   </footer>
 
@@ -247,6 +293,13 @@
         spaceBetween: 160,
         nextButton: '#top-products .swiper-button-next',
         prevButton: '#top-products .swiper-button-prev'
+    });
+    var swiperCustomers = new Swiper('#customers .swiper-container', {
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 50,
+        nextButton: '#customers .swiper-button-next',
+        prevButton: '#customers .swiper-button-prev'
     });
   </script>
 </body>
