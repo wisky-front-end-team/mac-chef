@@ -105,7 +105,9 @@
         <div class="swiper-slide slide-1">
           <div class="row">
             <div class="col-xs-7 left">
-              <img width="100%" height="639" src="./assets/images/team.png">
+              <div class="ratio-wrapper ratio-wrapper-4-3">
+                <img class="ratio-item" src="./assets/images/team.png">
+              </div>
             </div>
             <div class="col-xs-5 right">
               <h3 class="slide-title-sm">M.A.C Collection</h3>
@@ -167,11 +169,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <a href="#" class="image" style="background-image: url('./assets/images/winter-sale.png')">
+          <a href="#" class="image">
+            <img src="./assets/images/winter-sale.png">
           </a>
         </div>
         <div class="col-sm-6">
-          <a href="#" class="image" style="background-image: url('./assets/images/new-trend.png')">
+          <a href="#" class="image">
+            <img src="./assets/images/new-trend.png">
           </a>
         </div>
       </div>
@@ -186,29 +190,37 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">            
-                  <a href="#" class="image" style="background-image: url('./assets/images/non-coolmax.jpg')"></a>
+                <div class="swiper-slide">    
+                  <div class="ratio-wrapper ratio-wrapper-2-3">        
+                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/non-coolmax.jpg')"></a>
+                  </div>
                   <a href="#">
                     <h3 class="name">Nón Coolmax</h3>
                   </a>
                   <div class="price">200.000 VND</div>
                 </div>
                 <div class="swiper-slide">            
-                  <a href="#" class="image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                  <div class="ratio-wrapper ratio-wrapper-2-3">
+                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                  </div>
                   <a href="#">
                     <h3 class="name">Áo nam tay ngắn</h3>
                   </a>
                   <div class="price">200.000 VND</div>
                 </div>
-                <div class="swiper-slide">            
-                  <a href="#" class="image" style="background-image: url('./assets/images/tap-de-denim.jpg')"></a>
+                <div class="swiper-slide"> 
+                  <div class="ratio-wrapper ratio-wrapper-2-3">               
+                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/tap-de-denim.jpg')"></a>
+                  </div>
                   <a href="#">
                     <h3 class="name">Tạp dề Denim xám</h3>
                   </a>
                   <div class="price">200.000 VND</div>
                 </div>
-                <div class="swiper-slide">            
-                  <a href="#" class="image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                <div class="swiper-slide">
+                  <div class="ratio-wrapper ratio-wrapper-2-3">  
+                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                  </div>
                   <a href="#">
                   <h3 class="name">Áo nam tay ngắn</h3>
                   </a>
@@ -290,16 +302,50 @@
     var swiperTopProducts = new Swiper('#top-products .swiper-container', {
         slidesPerView: 3,
         paginationClickable: true,
-        spaceBetween: 160,
+        spaceBetween: 260,
         nextButton: '#top-products .swiper-button-next',
-        prevButton: '#top-products .swiper-button-prev'
+        prevButton: '#top-products .swiper-button-prev',
+        breakpoints: {
+            1200: {
+                spaceBetween: 160
+            },
+            992: {
+                spaceBetween: 60
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            360: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
     });
     var swiperCustomers = new Swiper('#customers .swiper-container', {
         slidesPerView: 4,
         paginationClickable: true,
         spaceBetween: 50,
         nextButton: '#customers .swiper-button-next',
-        prevButton: '#customers .swiper-button-prev'
+        prevButton: '#customers .swiper-button-prev',
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
     });
   </script>
 </body>
