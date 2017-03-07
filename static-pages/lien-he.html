@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:input="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/swal/sweetalert.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/hieu.css">
+</head>
+
+<body>
+    <nav id="contact">
+        <div class="container" style="margin-bottom: 55px">
+            <div class="maps">
+                <div id="map-canvas"></div>
+            </div>
+            <div class=" discription-content ">
+                <h1 style="text-transform: uppercase; color: #a77b4e; font-weight: 600; ">liên hệ</h1>
+                <p>
+                    <span>Chúng tôi luôn hân hạnh được phục vụ Quý khách hàng.</span>
+                    <span>Để được tư vấn, thiết kế cho các đơn hàng cho Quý công ty, doanh nghiệp, xin vui lòng liên hệ số điện thoại 08 vào giờ hành chính từ thứ hai đến thứ bảy, từ 8:30 đến 17:30.
+                	Hoặc vui lòng điền thông tin liên hệ cho nhu cầu thiết kế vào <a class="here" href="#">Đây.</a></span>
+                    <span>Cho những nhu cầu khác về sản phẩm, đơn hàng, dịch vụ hậu mãi khác, ... xin vui lòng liên hệ hot line +84 966.290.290 hoặc vui lòng điền thông tin yêu cầu vào khung dưới đây bất cứ khi nào, bộ phận chăm sóc khách hàng sẽ liên hệ với Quý khách hàng sớm nhất.</span>
+                    <span>Chân thành cảm ơn và mong muốn được phục vụ Quý khách.</span>
+                </p>
+            </div>
+            <div class="row contact-content ">
+                <div class="col-md-5 left ">
+                    <h2 style="text-transform: uppercase; color: #a77b4e; font-weight: 600 ">thông tin liên lạc</h2>
+                    <h4 style="color: #a77b4e; margin-top: 30px; font-weight: 600 ">Công ty TNHH TMDV SXPT NAM AN</h4>
+                    <ul>
+                        <li class="title ">Văn phòng giao dịch</li>
+                        <li>138/66 Trương Công Định, Phường 14, Quận Tân Bình, TP HCM</li>
+                        <li class="title ">Cửa hàng trưng bày (sắp khai trương)</li>
+                        <li>36/6 Bàu Cát 1, Phường 14, Quận Tân Bình, TP HCM</li>
+                        <li class="title ">Văn phòng</li>
+                        <li>7 Hoàng Diệu, Phường 10, Quận Phú Nhuận, TP HCM</li>
+                        <li class="title ">Mã số doanh nghiệp <span style="color: #333; ">0312449545</span></li>
+                    </ul>
+                    <h4>Điện THoại</h4>
+                    <span class="title ">Văn phòng</span> +84 8 66851736 - <span class="title ">Đường dây nóng</span> +84 966 290 290
+                    <h4>Email</h4>
+                    <span>info@macchef.com.vn - sale@macchef.com.vn</span>
+                </div>
+                <div class="col-md-7 right ">
+                    <form>
+                        <fieldset>
+                            <legend>Thông tin yêu cầu</legend>
+                            <div class="form-group">
+                                <label>Họ và tên*</label>
+                                <input type="text " name="name " data-role="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Email*</label>
+                                <input type="email " name="email " data-role="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện thoại*</label>
+                                <input type="text " name="phone " data-role="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Đơn hàng số (Nếu có)</label>
+                                <input type="text " name="invoiceId " data-role="invoiceId" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Loại yêu cầu*</label>
+                                <select class="form-control" data-role="order">
+                                    <option>Đặt hàng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Tin nhắn*</label>
+                                <textarea rows="7 " class="form-control" data-role="note"></textarea>
+                            </div>
+                            <input type="button" value="GỬI" id="btn-send" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript " src="assets/plugins/jquery-1.11.3.min.js "></script>
+    <script type="text/javascript " src="assets/plugins/bootstrap/bootstrap.min.js "></script>
+    <script type="text/javascript " src="assets/plugins/slick/slick.min.js "></script>
+    <script type="text/javascript " src="assets/js/script.js "></script>
+    <script type="text/javascript" src="assets/plugins/swal/sweetalert.min.js"></script>
+    <script type="text/javascript ">
+
+    /*Bản đồ*/
+    function initMap() {
+        var myLatLng = {
+            lat: 10.794973,
+            lng: 106.640430
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            center: {
+                lat: 10.794973,
+                lng: 106.640430
+            },
+            zoom: 18,
+            mapTypeControl: false
+        });
+
+        // Create a marker and set its position
+        var marker = new google.maps.Marker({
+            map: map,
+            position: myLatLng,
+            title: 'MacChef',
+        });
+        google.maps.event.trigger(map, 'resize');
+    }
+
+    //end maps
+    $(document).on('click','#btn-send', function(){
+    	sendMess();
+    });
+    function sendMess(){
+    	var emailReg = /^\w{2,15}@\w{2,15}[.]\w{2,5}$/;
+    	var nameReg = /[a-zA-Z\s?]$/;
+    	var phoneReg = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+    	if(!nameReg.test($('[data-role="name"]').val())){
+    		swal("Warning!", "Vui lòng nhập họ và tên");
+    		$('[data-role="name"]').focus();
+    		return;
+    	}
+    	if(!emailReg.test($('[data-role="email"]').val())){
+    		swal("Warning!", "Email không chính xác");
+    		$('[data-role="email"]').focus();
+    		return;
+    	}
+    	if(!phoneReg.test($('[data-role="phone"]').val())){
+    		swal("Warning!", "Vui lòng nhập số điện thoại");
+    		$('[data-role="phone"]').focus();
+    		return;
+    	}
+    	if($('[data-role="note"]').val() == ''){
+    		swal("Warning!", "Vui lòng nhập nội dung tin nhắn");
+    		$('[data-role="note"]').focus();
+    		return;
+    	}
+    	swal("Thành Công", "Yêu cầu của bạn đã được gửi! Xin cảm ơn!", "success")
+    } 
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1smJgcwVnKQQOKWoui7nvUv8rJ-I_h0s&callback=initMap" async defer></script>
+</body>
+
+</html>
