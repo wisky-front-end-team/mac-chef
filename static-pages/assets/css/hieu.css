@@ -1,0 +1,173 @@
+#footer {
+    background-color: #a77b4e;
+    color: white;
+    padding: 75px;
+}
+
+#footer .feature-container .logo {
+    display: block;
+}
+
+#footer .feature-container .logo img {
+    width: 200px;
+    height: 78px;
+}
+
+#footer .feature-container .description label {
+    display: block;
+}
+
+#footer .feature-container .feature ul {
+    list-style: none;
+    margin-left: -37px;
+}
+
+#footer .feature-container .feature ul li:first-child {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#footer .feature-container .feature ul li {
+    margin-top: 10px;
+}
+
+#footer .feature-container .feature ul li a {
+    color: white;
+}
+
+#footer .feature-container .feature ul li a:hover {
+    text-decoration: none;
+}
+
+#footer .feature-container .search-content {
+    margin-top: 15px;
+}
+
+#footer .feature-container .search-content input {
+    width: 143px;
+    height: 35px;
+    background-color: #a77b4e;
+    outline: none;
+    padding: 10px;
+    border: 2px groove white;
+}
+
+#footer .feature-container .search-content button {
+    color: #a77b4e;
+    background-color: white;
+    width: 35px;
+    height: 34px;
+    border: 0 white;
+    outline: none;
+    transform: translateX(-14%);
+}
+
+#footer .feature-container .social div {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+#copyright {
+    color: #a77b4e;
+    padding: 15px;
+    font-size: 12px;
+}
+
+
+/*design for contact*/
+
+
+/*design for map*/
+
+#contact .maps {
+    margin-bottom: 30px;
+}
+
+#contact .maps #map-canvas {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*end map*/
+
+#contact .discription-content {
+    margin-bottom: 45px;
+}
+
+#contact .discription-content span {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    display: block;
+}
+
+#contact .discription-content .here {
+    text-decoration: none;
+    color: #a77b4e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#contact .contact-content .left ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact .contact-content .left ul .title {
+    margin-top: 15px;
+    color: #a77b4e;
+}
+
+#contact .contact-content .left>h4 {
+    text-transform: uppercase;
+    color: #a77b4e;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#contact .contact-content .left .title {
+    color: #a77b4e;
+    margin-bottom: 20px;
+}
+
+#contact .contact-content .right .form-group input {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #333;
+    border-radius: 0;
+}
+
+#contact .contact-content .right .form-group textarea {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #333;
+    resize: none;
+}
+
+#contact .contact-content .right .form-group select {
+    box-shadow: none;
+    border: 1px solid #333;
+    border-radius: 0;
+}
+
+#contact .contact-content .right input[type="button"] {
+    border: none;
+    padding: 5px 20px;
+    background-color: #a77b4e;
+    color: white;
+}
+
+#contact .contact-content .right fieldset {
+    border: 1px double #a77b4e;
+    padding: 10px 30px 25px;
+}
+
+#contact .contact-content .right legend {
+    width: auto;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #a77b4e;
+}

@@ -2,7 +2,6 @@
 <html lang="en" xmlns:input="http://www.w3.org/1999/html">
 
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta charset="UTF-8">
   <title>Home</title>
 
@@ -10,7 +9,7 @@
 
   <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/plugins/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/plugins/swiper.min.css">
+  <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
   <link rel="stylesheet" href="./assets/css/theme.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -20,336 +19,51 @@
   <header id="header">
     <div class="container">
       <div class="row">
+        <!-- Left -->
+        <div class="left col-md-4">
+          <a class="lang">ENG</a>
+          <span>HOTLINE: +84 966 290 290</span>
+        </div><!-- /Left -->
         <!-- Center -->
-        <div class="center col-md-push-4 col-md-4">
-          <a href="#">
-            <img class="logo" width="170" src="./assets/images/logo.png">
-          </a>
+        <div class="center col-md-4">
+          <img class="logo" width="170" src="./assets/images/logo.png">
         </div><!-- /Center -->
         <!-- Right -->
-        <div class="right col-md-push-4 col-md-4">
+        <div class="right col-md-4">
           <div class="clearfix">
             <div class="action pull-right">
               <a href="#">
-                <img class="icon" src="./assets/images/icon-shopping-bag.png">
+              <i class="fa fa-shopping-cart"></i>
               </a>
             </div>
             <div class="action pull-right">
               <a href="#">
-                <img class="icon icon-account" src="./assets/images/icon-account.png">
+                <i class="fa fa-user"></i>
                 <span>Đăng nhập</span>
               </a>
             </div>
             <div class="action pull-right">
-              <a href="#">
-                <img class="icon" src="./assets/images/icon-search.png">
-              </a>
+              <i class="fa fa-search"></i>
             </div>
           </div>
         </div><!-- /Right -->
-        <!-- Left -->
-        <div class="left col-md-pull-8 col-md-4">
-          <a href="#" class="lang">ENG</a>
-          <span>HOTLINE: +84 966 290 290</span>
-        </div><!-- /Left -->
       </div>
     </div>
   </header>
 
-  <nav class="navbar navbar-default" id="nav">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="#">ÁO BẾP</a>
-          </li>
-          <li>
-            <a href="#">QUẦN BẾP</a>
-          </li>
-          <li>
-            <a href="#">TẠP DỀ</a>
-          </li>
-          <li>
-            <a href="#">PHỤ KIỆN</a>
-          </li>
-          <li>
-            <a href="#">ĐỒ BẾP NỮ</a>
-          </li>
-          <li>
-            <a href="#">KHUYẾN MÃI</a>
-          </li>
-          <li>
-            <a href="#">XU HƯỚNG</a>
-          </li>
-          <li>
-            <a href="#">THIẾT KẾ B2B</a>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+  <nav>
   </nav>
 
-  <!-- MAIN SLIDER -->
-  <section id="main-slider">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slide-1">
-          <div class="row">
-            <div class="col-xs-7 left">
-              <div class="ratio-wrapper ratio-wrapper-4-3">
-                <img class="ratio-item" src="./assets/images/team.png">
-              </div>
-            </div>
-            <div class="col-xs-5 right">
-              <h3 class="slide-title-sm">M.A.C Collection</h3>
-              <h1 class="slide-title-lg">
-                THE NEW<br>
-                <span>SPRING</span><br>
-                COLLECTION
-              </h1>
-              <a href="#" class="shop-now">
-                SHOP NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next">
-        <i class="fa fa-angle-right fa-2x"></i>
-      </div>
-      <div class="swiper-button-prev">
-        <i class="fa fa-angle-left fa-2x"></i>
-      </div>
-    </div>
-  </section><!-- /MAIN SLIDER -->
-
-  <!-- CATEGORIES -->
-
-  <section id="categories">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="#" class="image image-full" style="background-image: url('./assets/images/ao-bep.jpg')">
-            <h3 class="cate">Áo bếp</h3>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="#" class="image image-half" style="background-image: url('./assets/images/tap-de.jpg')">
-            <h3 class="cate">Tạp dề</h3>
-          </a>
-          <a href="#" class="image image-half" style="background-image: url('./assets/images/phu-kien-bep.jpg')">
-            <h3 class="cate">Phụ kiện bếp</h3>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="#" class="image image-full" style="background-image: url('./assets/images/quan-bep.jpg')">
-            <h3 class="cate">Quần bếp</h3>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section><!-- /CATEGORIES -->
-
-  <!-- ADS -->
-  <section id="ads">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="#" class="image">
-            <img src="./assets/images/winter-sale.png">
-          </a>
-        </div>
-        <div class="col-sm-6">
-          <a href="#" class="image">
-            <img src="./assets/images/new-trend.png">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section><!-- /ADS -->
-
-  <!-- TOP PRODUCTS -->
-  <section id="top-products">
-    <div class="container">
-      <h1 class="section-title">SẢN PHẨM HÀNG ĐẦU</h1>
-      <div class="swiper">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">    
-                  <div class="ratio-wrapper ratio-wrapper-2-3">        
-                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/non-coolmax.jpg')"></a>
-                  </div>
-                  <a href="#">
-                    <h3 class="name">Nón Coolmax</h3>
-                  </a>
-                  <div class="price">200.000 VND</div>
-                </div>
-                <div class="swiper-slide">            
-                  <div class="ratio-wrapper ratio-wrapper-2-3">
-                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
-                  </div>
-                  <a href="#">
-                    <h3 class="name">Áo nam tay ngắn</h3>
-                  </a>
-                  <div class="price">200.000 VND</div>
-                </div>
-                <div class="swiper-slide"> 
-                  <div class="ratio-wrapper ratio-wrapper-2-3">               
-                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/tap-de-denim.jpg')"></a>
-                  </div>
-                  <a href="#">
-                    <h3 class="name">Tạp dề Denim xám</h3>
-                  </a>
-                  <div class="price">200.000 VND</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="ratio-wrapper ratio-wrapper-2-3">  
-                    <a href="#" class="ratio-item image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
-                  </div>
-                  <a href="#">
-                  <h3 class="name">Áo nam tay ngắn</h3>
-                  </a>
-                  <div class="price">200.000 VND</div>
-                </div>
-            </div>
-        </div>      
-        <!-- Add Arrows -->
-        <div class="swiper-button-next">
-          <i class="fa fa-angle-right fa-2x"></i>
-        </div>
-        <div class="swiper-button-prev">
-          <i class="fa fa-angle-left fa-2x"></i>
-        </div>
-      </div>
-    </div>
-  </section><!-- /TOP PRODUCTS -->
-
-  <!-- CUSTOMERS -->
-  <section id="customers">
-    <div class="container">
-      <h1 class="section-title">KHÁCH HÀNG</h1>
-      <div class="swiper">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/pv-bank.png')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/happy-chef.png')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/aeon-mall.png')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/kien-viet.jpg')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/pv-bank.png')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/happy-chef.png')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/aeon-mall.png')"></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="image" style="background-image: url('./assets/images/kien-viet.jpg')"></a>
-                </div>
-            </div>
-        </div>      
-        <!-- Add Arrows -->
-        <div class="swiper-button-next">
-          <i class="fa fa-angle-right fa-2x"></i>
-        </div>
-        <div class="swiper-button-prev">
-          <i class="fa fa-angle-left fa-2x"></i>
-        </div>
-      </div>
-    </div>
-  </section><!-- /CUSTOMERS -->
+  <section>
+  </section>
 
   <footer id="footer">
   </footer>
 
   <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/swiper.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
-  <script type="text/javascript">
-    var swiperMainSlider = new Swiper('#main-slider .swiper-container', {
-        pagination: '#main-slider .swiper-pagination',
-        paginationClickable: true,
-        nextButton: '#main-slider .swiper-button-next',
-        prevButton: '#main-slider .swiper-button-prev',
-        spaceBetween: 30
-    });
-    var swiperTopProducts = new Swiper('#top-products .swiper-container', {
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 260,
-        nextButton: '#top-products .swiper-button-next',
-        prevButton: '#top-products .swiper-button-prev',
-        breakpoints: {
-            1200: {
-                spaceBetween: 160
-            },
-            992: {
-                spaceBetween: 60
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 10
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            360: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            }
-        }
-    });
-    var swiperCustomers = new Swiper('#customers .swiper-container', {
-        slidesPerView: 4,
-        paginationClickable: true,
-        spaceBetween: 50,
-        nextButton: '#customers .swiper-button-next',
-        prevButton: '#customers .swiper-button-prev',
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            }
-        }
-    });
-  </script>
 </body>
 
 </html>
