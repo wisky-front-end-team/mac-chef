@@ -55,11 +55,12 @@
 		border-right: 1px solid #a77b4e;
 		padding: 0 20px;
 	}
-	#header .fa {
-		font-size: 20px;
-	}
-	#header .fa-user {
+	#header .icon-account {
 		margin-right: 10px;
+	}
+	#header .icon {
+		display: inline-block;
+		vertical-align: baseline;
 	}
 /** /HEADER **/
 
