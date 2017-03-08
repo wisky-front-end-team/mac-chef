@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta charset="UTF-8">
   <title>Home</title>
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-
   <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/plugins/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/plugins/swiper.min.css">
@@ -37,7 +35,7 @@
             <div class="action pull-right">
               <a href="#">
                 <img class="icon icon-account" src="./assets/images/icon-account.png">
-                <span>Đăng nhập</span>
+                <span data-lang="SignIn">Đăng nhập</span>
               </a>
             </div>
             <div class="action pull-right">
@@ -60,7 +58,7 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -141,6 +139,7 @@
               <div class="col-sm-6 image-wrapper">
                 <img class="image" src="./assets/images/chef-coat.jpg">
               </div> 
+            </div>
           </li>
           <li>
             <a href="#">TẠP DỀ</a>
@@ -176,6 +175,7 @@
               <div class="col-sm-6 image-wrapper">
                 <img class="image" src="./assets/images/chef-coat.jpg">
               </div> 
+            </div>
           </li>
           <li>
             <a href="#">PHỤ KIỆN</a>
@@ -211,6 +211,7 @@
               <div class="col-sm-6 image-wrapper">
                 <img class="image" src="./assets/images/chef-coat.jpg">
               </div> 
+            </div>
           </li>
           <li>
             <a href="#">ĐỒ BẾP NỮ</a>
@@ -246,6 +247,7 @@
               <div class="col-sm-6 image-wrapper">
                 <img class="image" src="./assets/images/chef-coat.jpg">
               </div> 
+            </div>
           </li>
           <li>
             <a href="#">KHUYẾN MÃI</a>
@@ -281,6 +283,7 @@
               <div class="col-sm-6 image-wrapper">
                 <img class="image" src="./assets/images/chef-coat.jpg">
               </div> 
+            </div>
           </li>
           <li>
             <a href="#">XU HƯỚNG</a>
@@ -300,8 +303,8 @@
         <div class="swiper-slide slide-1">
           <div class="row">
             <div class="col-xs-7 left">
-              <div class="ratio-wrapper ratio-wrapper-4-3">
-                <img class="ratio-item" src="./assets/images/team.png">
+              <div class="ratio-wrapper ratio-wrapper-team-img">
+                <img class="ratio-item" src="./assets/images/bitmap/banner_home.png">
               </div>
             </div>
             <div class="col-xs-5 right">
@@ -333,25 +336,24 @@
   </section><!-- /MAIN SLIDER -->
 
   <!-- CATEGORIES -->
-
   <section id="categories">
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <a href="#" class="image image-full" style="background-image: url('./assets/images/ao-bep.jpg')">
+          <a href="#" class="image image-full" style="background-image: url('./assets/images/bitmap/ao.png')">
             <h3 class="cate">Áo bếp</h3>
           </a>
         </div>
         <div class="col-sm-4">
-          <a href="#" class="image image-half" style="background-image: url('./assets/images/tap-de.jpg')">
+          <a href="#" class="image image-half" style="background-image: url('./assets/images/bitmap/tap de.png')">
             <h3 class="cate">Tạp dề</h3>
           </a>
-          <a href="#" class="image image-half" style="background-image: url('./assets/images/phu-kien-bep.jpg')">
+          <a href="#" class="image image-half" style="background-image: url('./assets/images/bitmap/non.png')">
             <h3 class="cate">Phụ kiện bếp</h3>
           </a>
         </div>
         <div class="col-sm-4">
-          <a href="#" class="image image-full" style="background-image: url('./assets/images/quan-bep.jpg')">
+          <a href="#" class="image image-full" style="background-image: url('./assets/images/bitmap/quan.png')">
             <h3 class="cate">Quần bếp</h3>
           </a>
         </div>
@@ -387,16 +389,16 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">    
               <div class="ratio-wrapper ratio-wrapper-2-3">        
-                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/non-coolmax.jpg')"></a>
+                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/bitmap/black_chefs_skullcap_with_coolmax_mesh_and_velcro_tabsmall.png')"></a>
               </div>
               <a href="#">
                 <h3 class="name">Nón Coolmax</h3>
               </a>
               <div class="price">200.000 VND</div>
             </div>
-            <div class="swiper-slide">            
-              <div class="ratio-wrapper ratio-wrapper-2-3">
-                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+            <div class="swiper-slide">
+              <div class="ratio-wrapper ratio-wrapper-2-3">  
+                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/bitmap/dorset_short.png')"></a>
               </div>
               <a href="#">
                 <h3 class="name">Áo nam tay ngắn</h3>
@@ -405,7 +407,7 @@
             </div>
             <div class="swiper-slide"> 
               <div class="ratio-wrapper ratio-wrapper-2-3">               
-                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/tap-de-denim.jpg')"></a>
+                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/bitmap/oh_greywaist_full_15_tile.png')"></a>
               </div>
               <a href="#">
                 <h3 class="name">Tạp dề Denim xám</h3>
@@ -414,7 +416,7 @@
             </div>
             <div class="swiper-slide">
               <div class="ratio-wrapper ratio-wrapper-2-3">  
-                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/ao-tay-dai.jpg')"></a>
+                <a href="#" class="ratio-item image" style="background-image: url('./assets/images/bitmap/dorset_short.png')"></a>
               </div>
               <a href="#">
                 <h3 class="name">Áo nam tay ngắn</h3>
@@ -478,7 +480,7 @@
       </div>
     </div>
   </section><!-- /CUSTOMERS -->
-  
+
   <footer id="footer">
     <div class="container">
       <div class="row feature-container">
@@ -522,7 +524,7 @@
           </div>
           <div class="col-md-3 feature">
             <ul>
-              <li>dịch vụ khách hàng</li>
+              <li>nhận tin tức mới</li>
             </ul>
             <div class="search-content">
               <input placeholder="Địa chỉ email" type="text" name="search-input">
@@ -537,6 +539,7 @@
       </div>
     </div>
   </footer>
+
   <nav id="copyright">
     <div class="container">
       <span>&copy Bản quyền thuộc về Macchef Corp. Thiết kế bởi Verdin Design studio</span>
@@ -553,8 +556,41 @@
   <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/plugins/swiper.min.js"></script>
+  <script type="text/javascript" src="assets/js/lang.vi.js"></script>
+  <script type="text/javascript" src="assets/js/lang.en.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      translation();
+    });
+
+    function translation() {
+      if (typeof(Storage) !== "undefined") {
+        var langMode = localStorage.getItem('langMode');
+        if (langMode != null) {
+          langObj = lang[langMode];
+          $('.lang').text(langMode === "en"? "VI" : "ENG");
+        }
+      }
+      $('[data-lang]').each(function() {
+        var s = $(this).data('lang');
+        $(this).html(langObj[s]);
+      });
+    };
+
+    $('.lang').click(function() {
+      var langMode = $(this).text();
+      if (langMode === "ENG") {
+        $(this).text("VI");
+        langMode = "en";
+      } else {
+        $(this).text("ENG");
+        langMode = "vi";
+      }
+      localStorage.setItem('langMode', langMode);
+      translation();
+    });
+  </script>
 </body>
 
 </html>
-
